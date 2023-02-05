@@ -156,7 +156,14 @@ The following steps will guide you through the process of committing a change on
   ```
 7. Now add a commit message. They should be succinct and informative like “Created a profile file for Juyon”
 8. Hit escape and “:wq” then enter.
-9. Congratulations! You’ve made your first commit!!
+9. We can not push our commits. But before we do, we'll need to set up a personal access token. Follow the instructions here to find your PAT: 
+[Personal Access Token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+10. Now let's push our commit
+  ```
+  git push --set-upstream origin [yourname]_branch
+  ```
+  Now, you can use your Git username and PAT to authenticate.
+10. Congratulations! You’ve made your first commit!!
 
 </details>
 
@@ -230,9 +237,6 @@ As noted in the previous step, you may have seen evidence of an action running w
    **Note**: Like before, you can wait about 20 seconds, then refresh this page (the one you're following instructions from) and [GitHub Actions](https://docs.github.com/en/actions) will automatically close this step and open the next one.
 
 </details>
-
-<details id=5 open>
-<summary><h2>Step 5: Create a branch</h2></summary>
 
 <!-- 
   <<< Author notes: Finish >>> 
