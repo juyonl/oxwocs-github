@@ -29,17 +29,22 @@ Tell us your name, course, your experience with Git (if any) and your favorite p
 **What do you think Git is? What is it used for? Why is it important? What are the main aspects of Git?**
 - Git is...
 
-## How to start this course
+## README
 
-1. Above these instructions, right-click **Use this template** and open the link in a new tab.
-   ![Use this template](https://user-images.githubusercontent.com/1221423/169618716-fb17528d-f332-4fc5-a11a-eaa23562665e.png)
-2. In the new tab, follow the prompts to create a new repository.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository—private repositories will [use Actions minutes](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   ![Create a new repository](https://user-images.githubusercontent.com/1221423/169618722-406dc508-add4-4074-83f0-c7a7ad87f6f3.png)
-3. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
+## Licensing
+**Let's create a LICENSE file together!**
+
+## .gitignore
+
+## Setting up Account
+Everyone who doesn't have a GitHub account, make one now!
+Then follow these instructions to download Git onto your computer, so we can use our terminal to take our local files and edits and interact with and update our online repositories.
+[Link for Git setup] (https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+
 
 <!--endstep0-->
+ 
 
 <!-- 
   <<< Author notes: Step 1 >>> 
@@ -50,7 +55,7 @@ Tell us your name, course, your experience with Git (if any) and your favorite p
 -->
 
 <details id=1 open>
-<summary><h2>Step 1: Create a branch</h2></summary>
+<summary><h2>Step 1: Clone a repo and create a branch</h2></summary>
 
 _Welcome to "Introduction to GitHub"! :wave:_
 
@@ -65,18 +70,35 @@ _Welcome to "Introduction to GitHub"! :wave:_
 On additional branches, you can make edits without impacting the `main` version. Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute.
 <br>:tv: [Video: Branches](https://www.youtube.com/watch?v=xgQmu81G1yY)
 
-**What is a profile README?**: A [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page.
-
 ### :keyboard: Activity: Your first branch
 
-1. Open a new browser tab, and navigate to this same repository. Then, work on the steps in your second tab while you read the instructions in this tab.
+1. Open a new browser tab, and navigate to this repository..
 2. Navigate to the **Code** tab.
 3. Click on the **main** branch drop-down.<br>
    <img alt="image showing my-first-branch entry" src="/images/my-first-branch.png"/>
-4. In the field, enter a name for your branch: `my-first-branch`.
-5. Click **Create branch: my-first-branch** to create your branch.
-6. Move on to Step 2!<br>
-   **Note**: If you made a public repository, and want to confirm you correctly set up your first branch, wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically close this step and open the next one.
+4. In the field, enter a name for your branch: `[yourname]-branch`. (Where '[yourname]' is actually your name)
+5. Click **Create branch: [yourname]-branch** to create your branch.
+6. Move on to Step 2!
+  
+Now, we should have a GitHub account set up online and Git installed on our laptops. 
+
+1. In the repository, find the “code” button and then the clipboard icon to copy the HTML URL.
+2. In terminal, navigate to a directory where you want to copy the repository.
+  ```
+  cd Desktop
+  mkdir oxwocs
+  git clone [copied URL]
+  ```
+3. This command will list all branches.
+```
+  git branch
+  ``` 
+  These commands will create a new branch titled [yourname]_branch and then checkout the specified branch.
+  ```
+  git branch [yourname]_branch
+  git checkout [yourname]_branch
+  ```
+4. Move on to step 2!
 
 </details>
 
@@ -99,13 +121,13 @@ Creating a branch allows you to edit your project without changing the `main` br
 
 The following steps will guide you through the process of committing a change on GitHub. Committing a change requires first adding a new file to your new branch. 
 
-1. On the **Code** tab, make sure you're on your new branch `my-first-branch`.
+1. On the **Code** tab, make sure you're on your new branch `[yourname]-branch`.
 2. Select the **Add file** drop-down and click **Create new file**.<br>
    ![create new file option](/images/create-new-file.png)
-3. In the **Name your file...** field, enter `PROFILE.md`.
+3. In the **Name your file...** field, enter `[YOURNAME]PROFILE.md`.
 4. In the **Edit new file** area, copy the following content to your file:
    ```
-   Welcome to my GitHub profile!
+   Welcome to my GitHub profile! My name is [yourname]
    ```
    <img alt="profile.md file screenshot" src="/images/my-profile-file.png"/>
 5. For commits, you can enter a short commit message that describes what changes you made. This message helps others know what's included in your commit. GitHub offers a simple default message, but let's change it slightly for practice. First, enter `Add PROFILE.md` in the first text-entry field below **Commit new file**. Then, if you want to confirm what your screen should look like, expand the dropdown below.
@@ -114,8 +136,27 @@ The following steps will guide you through the process of committing a change on
    <img alt="screenshot of adding a new file with a commit message" src="/images/commit-full-screen.png" />
    </details>
 6. In this lesson, we'll ignore the other fields and click **Commit new file**.
-7. Move on to Step 3! <br>
-   **Note**: Like before, you can wait about 20 seconds, then refresh this page (the one you're following instructions from) and [GitHub Actions](https://docs.github.com/en/actions) will automatically close this step and open the next one.
+7. Move on to Step 3!
+  
+1. On terminal type the command:
+  ```
+  vim [yourname]_profile.md
+  ```
+2. Type i or a to go into insert mode. Then write
+3. Hi my name is [yourname] and I like to code! (or something similar)
+4. Hit escape and type “:wq” to save and quit your file
+5. Now we can see the newly committed file.
+  ```
+  ls
+  ```
+6.Add files you want to add to your commit and then commit your changes!
+  ```
+  git add [yourname]_profile.md
+  git commit
+  ```
+7. Now add a commit message. They should be succinct and informative like “Created a profile file for Juyon”
+8. Hit escape and “:wq” then enter.
+9. Congratulations! You’ve made your first commit!!
 
 </details>
 
@@ -155,9 +196,7 @@ You may have noticed after your commit that a message displayed indicating your 
 7. The next field helps you provide a description of the changes you made. Feel free to add a description of what you’ve accomplished so far. As a reminder, you have: created a branch, created a file and made a commit! <br>
    <img alt="screenshot showing pull request" src="/images/Pull-request-description.png"/>
 8. Click **Create pull request**.
-9. Move on to Step 4! <br>
-   **Note**: Like before, you can wait about 20 seconds, then refresh this page (the one you're following instructions from) and [GitHub Actions](https://docs.github.com/en/actions) will automatically close this step and open the next one. As a perk, you may see evidence of GitHub Actions running on the tab with the pull request opened! The image below shows a line you might see on your pull request after the Action finishes running.<br>
-   <img alt="screenshot of an example of an actions line" src="/images/Actions-to-step-4.png"/>
+9. Move on to Step 4! 
 
 </details>
 
@@ -192,6 +231,9 @@ As noted in the previous step, you may have seen evidence of an action running w
 
 </details>
 
+<details id=5 open>
+<summary><h2>Step 5: Create a branch</h2></summary>
+
 <!-- 
   <<< Author notes: Finish >>> 
   Review what we learned, ask for feedback, provide next steps.
@@ -204,28 +246,8 @@ _Congratulations friend, you've completed this course and joined the world of de
 
 <img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
 
-Here's a recap of your accomplishments:
 
-- You learned about GitHub, repositories, branches, commits, and pull requests.
-- You created a branch, a commit, and a pull request.
-- You merged a pull request.
-- You made your first contribution! :tada:
 
-### What's next?
-
-  If you'd like to make a profile README, use the simplified instructions below or follow the instructions in the [Managing your profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme) article.
-  1. Make a new public repository with a name that matches your GitHub username.
-  2. Create a file named `README.md` in its root. The "root" means not inside any folder in your repository.
-  3. Edit the contents of the `README.md` file.
-  4. If you created a new branch for your file, open and merge a pull request on your branch.
-  5. We'd love to see your new profile! Share your profile on social media and tag us!
-  6. Lastly, we'd love to hear what you thought of this course [in our discussion board](https://github.com/skills/.github/discussions).
-
-Check out these resources to learn more or get involved:
-- Are you a student? Check out the [Student Developer Pack](https://education.github.com/pack).
-- [Take another GitHub Skills course](https://github.com/skills).
-- [Read the GitHub Getting Started docs](https://docs.github.com/en/get-started).
-- To find projects to contribute to, check out [GitHub Explore](https://github.com/explore).
 
 </details>
 
