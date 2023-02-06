@@ -90,6 +90,7 @@ Now, we should have a GitHub account set up online and Git installed on our lapt
   cd Desktop
   mkdir oxwocs
   git clone [copied URL]
+  cd oxwocs
   ```
 3. This command will list all branches.
 ```
