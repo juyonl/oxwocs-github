@@ -7,6 +7,8 @@
 
 # OxWoCS Introduction to GitHub (based off of GitHub Skills)
 
+I'm editing the same file as a different branch. Watch what happens when a merge conflict happens... 
+
 _Get started using GitHub in two hours!_
 
 <!-- 
