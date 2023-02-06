@@ -254,7 +254,9 @@ _Congratulations friend, you've completed this course and joined the world of de
 <img src=https://octodex.github.com/images/collabocats.jpg alt=celebrate width=300 align=right>
 
 
+## Further steps: 
 
+[Markdown Tutorial](https://github.com/skills/communicate-using-markdown)
 
 </details>
 
