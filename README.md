@@ -11,6 +11,8 @@
 
 Yay merge conflicts 🥂 🐻‍❄️
 
+Because I forked this from the most recent main branch, there won't be merge conflicts...
+
 _Get started using GitHub in two hours!_
 
 <!-- 
