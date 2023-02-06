@@ -27,7 +27,9 @@ Tell us your name, course, your experience with Git (if any) and your favorite p
 ## Introduce GitHub!
 **Share your ideas**
 **What do you think Git is? What is it used for? Why is it important? What are the main aspects of Git?**
-- Git is...
+- Git is a way to share code with other people
+- Fomatting, syntatical 
+- Work on different versions of the same code base (useful in operations -- use different branches and test out different ideas)
 
 ## README
 
