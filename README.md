@@ -239,7 +239,7 @@ As noted in the previous step, you may have seen evidence of an action running w
 2. Check out the **Finish** step to see what you can learn next!<br>
    **Note**: Like before, you can wait about 20 seconds, then refresh this page (the one you're following instructions from) and [GitHub Actions](https://docs.github.com/en/actions) will automatically close this step and open the next one.
 
-</details>
+</details> 
 
 <!-- 
   <<< Author notes: Finish >>> 
