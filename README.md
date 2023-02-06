@@ -7,6 +7,10 @@
 
 # OxWoCS Introduction to GitHub (based off of GitHub Skills)
 
+# Making a merge conflict just for fun!!!!
+
+Yay merge conflicts 🥂 🐻‍❄️
+
 _Get started using GitHub in two hours!_
 
 <!-- 
